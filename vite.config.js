@@ -2,7 +2,8 @@ import { fileURLToPath, URL } from 'url'
 
 import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
-import path from 'path'
+const path = require('path');
+
 
 const viteEnv = {}
 Object.keys(process.env).forEach((key) => {
@@ -18,7 +19,7 @@ export default defineConfig({
   resolve: {
     alias: {
       '@': fileURLToPath(new URL('./src', import.meta.url)),
-      '@': require('path').resolve(__dirname, 'src')
+      '@': require(path).resolve(__dirname, 'src')
     },
     define: viteEnv,
   plugins: [
