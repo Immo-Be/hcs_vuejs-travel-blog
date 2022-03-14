@@ -15,7 +15,7 @@
             <img
               v-if="tripData[index].username === 'Immo'"
               style="min-width: 48px !important"
-              src="src/assets/immo.png"
+              src="../../../assets/immo.png"
               alt="Placeholder image"
             />
             <img
