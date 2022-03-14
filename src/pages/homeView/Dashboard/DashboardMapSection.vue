@@ -28,7 +28,7 @@
             <div style="margin-bottom: 12px">
               <img
                 id="authorImg"
-                src="src/assets/immo.png"
+                src="../../../assets/immo.png"
                 style="
                   width: 35px;
                   border-radius: 50%;
