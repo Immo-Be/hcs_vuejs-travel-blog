@@ -2,7 +2,7 @@
 // import Dashboard from "../components/main/Dashboard.vue"
 // import BlogPostDetail from "../components/main/BlogPostDetail/BlogPostDetail.vue"
 
-const HEROKU_SERVER_URL = import.meta.env.VITE_HEROKU_SERVER_URL;
+const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
 
 
 async function getAllTrips() {
