@@ -9,7 +9,7 @@
 import DashboardPostSection from "./DashboardPostSection.vue";
 import DashboardMapSection from "./DashboardMapSection.vue";
 
-import SERVER from "../../../services/herokuServer";
+import HEROKU_SERVER from "../../../services/herokuServer";
 // import WEATHER_API from "../../services/OpenWeatherAPI";
 
 export default {
@@ -24,7 +24,7 @@ export default {
 
   // methods: {
   //   async initData() {
-  //     this.result = await SERVER.getAllTrips();
+  //     this.result = await HEROKU_SERVER .getAllTrips();
 
   //     console.log(this.result);
   //   },
@@ -36,7 +36,7 @@ export default {
   created: async function () {
     console.log("Dashboard created");
     // await WEATHER_API.loadDataFromWeatherAPI();
-    this.result = await SERVER.getAllTrips();
+    this.result = await HEROKU_SERVER.getAllTrips();
     // console.log("Dashboard created");
     // console.log("This was created");
     // console.log(result);

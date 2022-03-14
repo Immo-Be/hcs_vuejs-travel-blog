@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import SERVER from "../../services/herokuServer";
+import HEROKU_SERVER from "../../services/herokuServer";
 export default {
   emits: ["infoTripUpdate"],
   props: {
@@ -155,7 +155,7 @@ export default {
   },
   methods: {
     sendUserInputToServer() {
-      SERVER.addTrip(this.city);
+      HEROKU_SERVER.addTrip(this.city);
       this.clearForm();
       this.$router.push({ path: "/" });
     },

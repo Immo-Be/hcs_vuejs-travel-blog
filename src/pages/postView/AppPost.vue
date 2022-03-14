@@ -12,7 +12,7 @@
 import PostDescription from "./PostDescription.vue";
 import PostMap from "./PostMap.vue";
 
-import SERVER from "../../services/herokuServer";
+import HEROKU_SERVER from "../../services/herokuServer";
 // import WEATHER_API from "../services/OpenWeatherAPI";
 
 export default {
@@ -41,7 +41,7 @@ export default {
       // this.tripData = result[1];
       // console.log(this.result);
       // await WEATHER_API.loadDataFromWeatherAPI();
-      this.tripData = await SERVER.getAllTrips();
+      this.tripData = await HEROKU_SERVER.getAllTrips();
       // console.log(this.tripData[this.tripDetailPostion].city);
       this.city = this.tripData[this.tripDetailPostion].city;
 
@@ -51,14 +51,14 @@ export default {
   },
   // methods: {
   //   async initData() {
-  //     this.tripData = await SERVER.getAllTrips();
+  //     this.tripData = await HEROKU_SERVER.getAllTrips();
   //     console.log(this.tripData);
   //     // console.log(this.tripData[this.tripDetailPostion].city);
   //     this.city = this.tripData[this.tripDetailPostion].city;
   //   },
   // },
   created: async function () {
-    this.tripData = await SERVER.getAllTrips();
+    this.tripData = await HEROKU_SERVER.getAllTrips();
     // console.log(this.tripData[this.tripDetailPostion].city);
     this.city = this.tripData[this.tripDetailPostion].city;
   },

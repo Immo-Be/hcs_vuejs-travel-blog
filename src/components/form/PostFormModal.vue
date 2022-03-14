@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import SERVER from "../../services/herokuServer";
+import HEROKU_SERVER from "../../services/herokuServer";
 // import WEATHER_API from "../services/OpenWeatherAPI";
 
 import PostForm from "./PostForm.vue";
@@ -127,14 +127,14 @@ export default {
 
     async deleteTripFromServer() {
       // console.log(this.cityValue.id);
-      SERVER.deleteTrip(this.cityValue);
+      HEROKU_SERVER.deleteTrip(this.cityValue);
     },
 
     async updateTripToServer() {
       this.isLoading = true;
       // console.log(e);
       //   console.log("1. function called");
-      await SERVER.updateTrip(this.newTripInfo);
+      await HEROKU_SERVER.updateTrip(this.newTripInfo);
       //   console.log("2. Trip update");
       // WEATHER_API.loadDataFromWeatherAPI();
       // this.result = await SERVER.getAllTrips();
