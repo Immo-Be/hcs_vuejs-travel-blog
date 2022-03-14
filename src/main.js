@@ -9,7 +9,6 @@ const emitter = mitt();
 const app = createApp(App)
 app.config.globalProperties.emitter = emitter;
 
-
 app.use(VueGoogleMaps, {
     load: {
         key: import.meta.env.VITE_MAPS_API_KEY,      

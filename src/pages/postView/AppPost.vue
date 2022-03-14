@@ -12,7 +12,7 @@
 import PostDescription from "./PostDescription.vue";
 import PostMap from "./PostMap.vue";
 
-import SERVER from "../../services/Server";
+import SERVER from "../../services/herokuServer";
 // import WEATHER_API from "../services/OpenWeatherAPI";
 
 export default {

@@ -9,7 +9,7 @@
 import DashboardPostSection from "./DashboardPostSection.vue";
 import DashboardMapSection from "./DashboardMapSection.vue";
 
-import SERVER from "../../../services/Server";
+import SERVER from "../../../services/herokuServer";
 // import WEATHER_API from "../../services/OpenWeatherAPI";
 
 export default {

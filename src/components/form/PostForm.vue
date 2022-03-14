@@ -108,7 +108,7 @@
 </template>
 
 <script>
-import SERVER from "../../services/Server";
+import SERVER from "../../services/herokuServer";
 export default {
   emits: ["infoTripUpdate"],
   props: {

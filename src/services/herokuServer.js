@@ -2,12 +2,12 @@
 // import Dashboard from "../components/main/Dashboard.vue"
 // import BlogPostDetail from "../components/main/BlogPostDetail/BlogPostDetail.vue"
 
-const SERVER_URL = import.meta.env.VITE_SERVER_URL;
+const HEROKU_SERVER_URL = import.meta.env.VITE_HEROKU_SERVER_URL;
 
 
 async function getAllTrips() {
 
-    const url = SERVER_URL;
+    const url = HEROKU_SERVER_URL;
     const response = await fetch(url);
     const result = await response.json();
 
@@ -18,7 +18,7 @@ async function getAllTrips() {
 //     // alert("update is called")
 //     // console.log(data)
     
-//     const url = SERVER_URL + "/update";
+//     const url = HEROKU_SERVER_URL + "/update";
 //     const response = await fetch(url, {
 //         method: "PUT",
 //         headers: {
@@ -40,7 +40,7 @@ async function getAllTrips() {
 async function addTrip(newTrip) {
     // console.log(newTrip)
     
-    const url = SERVER_URL + "/id";
+    const url = HEROKU_SERVER_URL + "/id";
     const response = await fetch(url, {
         method: "POST",
         headers: {
@@ -57,7 +57,7 @@ async function addTrip(newTrip) {
 async function updateTrip(trip) {
     // console.log(trip)
     
-    const url = SERVER_URL + "/update";
+    const url = HEROKU_SERVER_URL + "/update";
     const response = await fetch(url, {
         method: "PUT",
         headers: {
@@ -76,7 +76,7 @@ async function updateTrip(trip) {
 async function deleteTrip(trip) {
     console.log(trip)
     
-    const url = SERVER_URL + "/deleteTrip";
+    const url = HEROKU_SERVER_URL + "/deleteTrip";
     const response = await fetch(url, {
         method: "DELETE",
         headers: {

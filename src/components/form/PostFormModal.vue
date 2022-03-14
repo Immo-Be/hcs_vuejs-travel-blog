@@ -70,7 +70,7 @@
 </template>
 
 <script>
-import SERVER from "../../services/Server";
+import SERVER from "../../services/herokuServer";
 // import WEATHER_API from "../services/OpenWeatherAPI";
 
 import PostForm from "./PostForm.vue";
