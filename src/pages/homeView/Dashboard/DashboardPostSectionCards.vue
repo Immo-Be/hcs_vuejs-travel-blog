@@ -21,7 +21,7 @@
             <img
               v-else
               style="min-width: 48px !important"
-              src="./../../assets/driver.png"
+              src="../../../assets/driver.png"
               alt="Placeholder image"
             />
           </figure>
