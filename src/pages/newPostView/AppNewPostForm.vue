@@ -1,7 +1,7 @@
 <template>
   <div id="formPageWrapper">
     <AppArrow />
-    <div id="FormWrapper">
+    <div id="formWrapper">
       <h1 class="title">Add a new Blog Post</h1>
       <h2 class="subtitle">
         Feel free to add your own trip to the list of mine!
@@ -37,10 +37,17 @@ export default {
   align-content: flex-start;
 }
 
-#FormWrapper {
+#formWrapper {
   /* width: 50%; */
   flex-basis: 90%;
   margin-right: 5rem;
   margin-left: 5rem;
+}
+
+@media (max-width: 499px) {
+  #formWrapper {
+    margin-left: 12px;
+    margin-right: 12px;
+  }
 }
 </style>

@@ -47,7 +47,7 @@ export default {};
   background-repeat: no-repeat;
   margin: 0 auto !important;
   z-index: 1;
-  animation: rotate 90s backwards linear infinite;
+  animation: rotate 600s backwards linear infinite;
 }
 
 @media (min-width: 768px) {

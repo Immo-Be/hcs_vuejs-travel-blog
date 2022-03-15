@@ -1,13 +1,15 @@
 <template>
-  <div class="navbar-brand" @click="$router.push({ path: '/' })">
-    <a class="navbar-item" href="#">
+  <div class="navbar-brand">
+    <div class="navbar-item" @click="$router.push({ path: '/' })">
       <img
         id="logo"
         src="https://img.icons8.com/external-wanicon-lineal-color-wanicon/100/000000/external-travel-travel-wanicon-lineal-color-wanicon.png"
         height="40"
       />
-    </a>
-    <a href="#" class="navbar-item">Travel Blog Stories</a>
+    </div>
+    <div @click="$router.push({ path: '/' })" class="navbar-item">
+      Travel Blog Stories
+    </div>
 
     <a
       role="button"

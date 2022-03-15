@@ -13,4 +13,10 @@
   height: fit-content;
   width: fit-content;
 }
+
+@media (max-width: 426px) {
+  #BackArrowWrapper {
+    margin-left: 5%;
+  }
+}
 </style>

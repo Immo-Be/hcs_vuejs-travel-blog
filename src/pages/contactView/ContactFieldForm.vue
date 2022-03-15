@@ -67,7 +67,7 @@
             type="checkbox"
             class="unchecked"
           />
-          I agree to <a href="#">not send spam</a>
+          I agree to <RouterLink to="/spam">not send spam</RouterLink>
         </label>
       </div>
     </div>

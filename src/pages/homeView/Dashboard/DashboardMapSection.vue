@@ -131,7 +131,7 @@ export default {
 </script>
 <style scoped>
 #mapsWrapper {
-  min-height: 60vh;
+  min-height: 80vh;
   /* border-left: #0e2a48 2px solid; */
   width: 50%;
   box-sizing: border-box;

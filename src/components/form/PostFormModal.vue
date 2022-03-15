@@ -127,6 +127,8 @@ export default {
 
     async deleteTripFromServer() {
       // console.log(this.cityValue.id);
+      alert("Deleted card succesfully");
+      this.$router.push({ path: "/" });
       HEROKU_SERVER.deleteTrip(this.cityValue);
     },
 
@@ -151,7 +153,12 @@ export default {
 </script>
 
 <style scoped>
-.fade-enter-active,
+@media (max-width: 499px) {
+  .is-active {
+    margin-top: 50px;
+  }
+}
+/* .fade-enter-active,
 .fade-leave-active {
   transition: opacity 0.4s linear;
 }
@@ -170,5 +177,5 @@ export default {
 .pop-leave-to {
   opacity: 0;
   transform: scale(0.3) translateY(-50%);
-}
+} */
 </style>

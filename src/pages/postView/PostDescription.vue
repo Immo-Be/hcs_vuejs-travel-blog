@@ -179,7 +179,7 @@ h2 {
 
 @media (max-width: 499px) {
   #contentWrapper {
-    padding-left: 46px;
+    padding-left: 12px;
     padding-top: 0;
   }
 }
@@ -187,6 +187,7 @@ h2 {
 @media (min-width: 900px) {
   #contentWrapper {
     padding-left: 46px;
+    padding-right: 46px;
     padding-top: 0;
   }
 }
@@ -194,6 +195,7 @@ h2 {
 @media (min-width: 1000px) {
   #contentWrapper {
     padding-left: 0px;
+    padding-right: 5%;
     padding-top: 36px;
   }
 }

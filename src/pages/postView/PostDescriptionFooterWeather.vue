@@ -1,17 +1,24 @@
 <template>
   <div id="weatherWrapper">
-    <span>Current local weather:</span> <br />
+    <span style="font-size: 1.2rem">Current local weather:</span> <br />
     <div id="weatherFlex">
       <div id="desriptionWrapper">
-        <p>
+        <p style="font-size: 1.2rem">
           There are currently
-          <span style="font-weight: bold">{{ maxTemp }}°C</span> in
-          <span style="text-transform: capitalize">{{ city }}</span
+          <span style="font-weight: bold; font-size: 1.2rem"
+            >{{ maxTemp }}°C</span
+          >
+          in
+          <span style="text-transform: capitalize; font-size: 1.2rem">{{
+            city
+          }}</span
           >: {{ weatherReaction() }}
         </p>
         <p>
           The weather can be described as
-          <span style="font-weight: bold">{{ weatherDescription }}</span>
+          <span style="font-weight: bold; font-size: 1.2rem">{{
+            weatherDescription
+          }}</span>
         </p>
       </div>
       <div id="iconWrapper">

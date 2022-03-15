@@ -17,6 +17,14 @@ const routes = [
     component: () => import('../pages/contactView/AppContact.vue')
   },
   {
+    path: '/spam',
+    name: 'ContactSpam',
+    // route level code-splitting
+    // this generates a separate chunk (About.[hash].js) for this route
+    // which is lazy-loaded when the route is visited.
+    component: () => import('../pages/contactView/ContactSpam.vue')
+  },
+  {
     path: '/post/:id',
     name: 'AppPost',
     component: () => import('../pages/postView/AppPost.vue')
