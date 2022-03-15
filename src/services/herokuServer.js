@@ -2,7 +2,7 @@
 // import Dashboard from "../components/main/Dashboard.vue"
 // import BlogPostDetail from "../components/main/BlogPostDetail/BlogPostDetail.vue"
 
-const HEROKU_SERVER_URL = 'https://hcs-finalproject.herokuapp.com/';
+const HEROKU_SERVER_URL = 'https://hcs-finalproject.herokuapp.com';
 
 
 async function getAllTrips() {
