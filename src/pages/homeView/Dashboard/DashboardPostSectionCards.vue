@@ -5,9 +5,9 @@
       class="imageContainer"
       @click="$router.push({ path: '/post/' + trip.id })"
     >
-      <div>
-        <img id="tripImg" :src="tripData[index].img" alt="" />
-      </div>
+      <!-- <div> -->
+      <img id="tripImg" :src="tripData[index].img" />
+      <!-- </div> -->
 
       <div class="card-content">
         <div class="media">
@@ -147,7 +147,8 @@ export default {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
   /* width: 200px !important; */
-  /* height: 40% !important; */
+  min-height: 192.656px !important;
+  width: auto !important;
   margin-bottom: 12px;
 }
 

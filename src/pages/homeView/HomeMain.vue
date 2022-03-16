@@ -3,7 +3,7 @@
     <div id="mainBackground"></div>
     <div
       id="mainTextArea"
-      class="is-flex is-flex-wrap-wrap is-align-items-start is-justify-content-start"
+      class="is-flex is-flex-wrap-wrap is-align-items-end is-justify-content-center"
     >
       <div class="item">
         <h1>
@@ -56,7 +56,6 @@ export default {};
   background-size: cover;
   width: 100%;
   min-height: 140px;
-
   /* background-color: rgba(14, 42, 72, 1); */
 }
 h1 {
