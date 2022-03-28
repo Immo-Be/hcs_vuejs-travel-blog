@@ -13,7 +13,7 @@
           <div @click="$router.push({ path: '/new' })" class="button is-grey">
             <strong>New Post</strong>
           </div>
-          <a class="button is-light is-disabled"> Log in </a>
+          <button class="button is-light is-disabled">Log in</button>
         </div>
       </div>
     </div>
