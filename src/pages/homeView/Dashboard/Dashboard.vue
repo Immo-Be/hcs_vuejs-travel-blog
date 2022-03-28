@@ -22,25 +22,13 @@ export default {
     result() {},
   },
 
-  // methods: {
-  //   async initData() {
-  //     this.result = await HEROKU_SERVER .getAllTrips();
-
-  //     console.log(this.result);
-  //   },
-  // },
   components: {
     DashboardPostSection,
     DashboardMapSection,
   },
   created: async function () {
     console.log("Dashboard created");
-    // await WEATHER_API.loadDataFromWeatherAPI();
     this.result = await HEROKU_SERVER.getAllTrips();
-    // console.log("Dashboard created");
-    // console.log("This was created");
-    // console.log(result);
-    // console.log(this.markers);
   },
   updated() {
     console.log("Dashboard updated");

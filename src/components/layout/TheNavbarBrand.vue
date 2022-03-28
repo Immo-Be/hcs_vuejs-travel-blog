@@ -38,22 +38,8 @@ export default {
 </script>
 
 <style scoped>
-/* a {
-  height: fit-content;
-} */
 #logo {
-  /* height: 40px !important;*/
   width: 40px !important;
   padding-left: 8px;
-  /* border: black solid 2px; */
-  /* height: 45px; */
-  /* padding-left: 8px; */
 }
-/* .navbar-burger {
-  margin-left: 0 !important;
-} */
-
-/* .navbar-brand {
-  max-width: 100vw;
-} */
 </style>

@@ -1,6 +1,4 @@
-// import BlogPostDetail from "../components/main/BlogPostDetail/BlogPostDetail.vue"
-// import Dashboard from "../components/main/Dashboard.vue"
-// import BlogPostDetail from "../components/main/BlogPostDetail/BlogPostDetail.vue"
+
 
 const HEROKU_SERVER_URL = 'https://hcs-finalproject.herokuapp.com';
 
@@ -14,28 +12,6 @@ async function getAllTrips() {
     return result;
 }
 
-// async function updateTripsWithWeatherInfo(data) {
-//     // alert("update is called")
-//     // console.log(data)
-    
-//     const url = HEROKU_SERVER_URL + "/update";
-//     const response = await fetch(url, {
-//         method: "PUT",
-//         headers: {
-//             "Content-Type": "application/json"
-//         },
-//         body: JSON.stringify(data)
-//     });
-//     const result = await response.json();
-//     // alert("result")
-//     // console.log(result)
-
-//     // initData()
-//     // BlogPostDetail.methods.initData()
-
-
-//     return result;
-// }
 
 async function addTrip(newTrip) {
     // console.log(newTrip)

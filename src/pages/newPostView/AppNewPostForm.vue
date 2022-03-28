@@ -27,9 +27,6 @@ export default {
 
 <style scoped>
 #formPageWrapper {
-  /* border-left: #0e2a48 2px solid; */
-  /* width: 50%; */
-  /* box-sizing: border-box; */
   flex: 1 1 450px;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +35,6 @@ export default {
 }
 
 #formWrapper {
-  /* width: 50%; */
   flex-basis: 90%;
   margin-right: 5rem;
   margin-left: 5rem;

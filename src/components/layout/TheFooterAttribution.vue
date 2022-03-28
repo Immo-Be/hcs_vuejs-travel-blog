@@ -22,7 +22,6 @@
 <style scoped>
 div {
   text-align: center;
-  /* margin-top: 20vh !important; */
 }
 
 .first {

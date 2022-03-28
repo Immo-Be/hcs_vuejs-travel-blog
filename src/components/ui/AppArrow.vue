@@ -1,7 +1,6 @@
 <template>
   <div id="BackArrowWrapper" @click="this.$router.push({ path: '/' })">
     <img src="../../assets/arrow-left.svg" style="height: 30px; width: 30px" />
-    <!-- <RouterLink this.router.back()></RouterLink> -->
   </div>
 </template>
 

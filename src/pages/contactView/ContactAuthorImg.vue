@@ -24,7 +24,6 @@ h1 {
   margin-bottom: 2rem;
   font-size: 5rem;
   line-height: 5rem;
-  /* color: white; */
   font-weight: bold;
   margin-left: 3rem;
   max-width: 400px;

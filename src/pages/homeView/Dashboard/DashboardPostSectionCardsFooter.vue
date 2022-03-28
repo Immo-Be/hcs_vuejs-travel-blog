@@ -1,8 +1,4 @@
 <template>
-  <!-- <div class="is-flex is-justify-content-center mb-4" id="editWrapper">
-    <img src="src/assets/images/editIcon.png" alt="" />
-    <button class="button is-danger is-light">Remove</button>
-  </div> -->
   <footer class="card-footer">
     <div class="card-footer-item">
       <img src="../../assets/images/edit.svg" alt="" />
@@ -25,13 +21,11 @@ button {
 }
 .card-footer-item:nth-child(1) {
   color: rgb(14, 42, 72);
-  /* border-bottom-right-radius: 20px; */
   border-bottom-left-radius: 20px;
 }
 .card-footer-item:nth-child(2) {
   color: rgb(14, 42, 72);
   border-bottom-right-radius: 20px;
-  /* border-bottom-left-radius: 20px; */
 }
 .card-footer-item:hover {
   background-color: rgb(236, 236, 236);

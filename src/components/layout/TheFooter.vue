@@ -8,7 +8,7 @@
         <a href="https://hamburgcodingschool.com/" target="_blank"
           >Hamburg Coding School</a
         >. Some images need
-        <RouterLink to="/attribution">Attribution</RouterLink>
+        <RouterLink to="/attribution">attribution</RouterLink>
       </p>
     </div>
   </footer>
@@ -16,14 +16,10 @@
 
 <style scoped>
 #footerWrapper {
-  /* border-top: 1px solid #dee2e6; */
   padding-top: 8vh;
   padding-bottom: 8vh;
   display: block;
-  /* background-color: #0e2a48; */
   background-color: white;
-  /* height: 200px; */
-  /* width: 100%; */
 }
 </style>
 

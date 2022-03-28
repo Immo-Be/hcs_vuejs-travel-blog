@@ -24,27 +24,8 @@
           placeholder="Email input"
           value="hello@"
         />
-        <!-- <span class="icon is-small is-left">
-        <i class="fas fa-envelope"></i>
-      </span>
-      <span class="icon is-small is-right">
-        <i class="fas fa-exclamation-triangle"></i>
-      </span> -->
-      </div>
-      <!-- <p class="help is-danger">This email is invalid</p> -->
-    </div>
-
-    <!-- <div class="field">
-    <label class="label">Subject</label>
-    <div class="control">
-      <div class="select">
-        <select>
-          <option>Select dropdown</option>
-          <option>With options</option>
-        </select>
       </div>
     </div>
-  </div> -->
 
     <div class="field">
       <label for="message" class="label">Message</label>
@@ -72,28 +53,12 @@
       </div>
     </div>
 
-    <!-- <div class="field">
-    <div class="control">
-      <label class="radio">
-        <input type="radio" name="question" />
-        Yes
-      </label>
-      <label class="radio">
-        <input type="radio" name="question" />
-        No
-      </label>
-    </div>
-  </div> -->
-
     <div class="field is-grouped">
       <div class="control">
         <button type="submit" value="Send" class="button is-link">
           Submit
         </button>
       </div>
-      <!-- <div class="control">
-        <button class="button is-link is-light">Cancel</button>
-      </div> -->
     </div>
   </form>
 

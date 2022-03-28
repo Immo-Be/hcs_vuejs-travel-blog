@@ -1,13 +1,10 @@
 <template>
-  <!-- {{ tripData }} -->
   <div class="card" v-for="(trip, index) in tripData" :key="index">
     <div
       class="imageContainer"
       @click="$router.push({ path: '/post/' + trip.id })"
     >
-      <!-- <div> -->
       <img id="tripImg" :src="tripData[index].img" />
-      <!-- </div> -->
 
       <div class="card-content">
         <div class="media">
@@ -42,16 +39,11 @@
             <!-- </div> -->
           </div>
         </div>
-        <!-- <Date :start="tripData[index].start" :end="tripData[index].end" /> -->
         <p style="text-align: center" class="title">
           {{ tripData[index].title }}
         </p>
 
         <div style="display: flex" class="content">
-          <!-- Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus nec
-          iaculis mauris. <a>@bulmaio</a>. <a href="#">#css</a>
-          <a href="#">#responsive</a>
-          <br /> -->
           <img
             style="margin-left: 12px"
             src="../../../assets/calendar.svg"
@@ -61,62 +53,23 @@
             {{ tripData[index].start }} -
             {{ tripData[index].end }}
           </p>
-          <!-- <time>
-            Date of Visit: {{ tripData[index].start }} -
-            {{ tripData[index].end }}</time
-          > -->
         </div>
-
-        <!-- <div class="centered">
-          {{ tripData[index].city }}
-        </div> -->
       </div>
-      <!-- <div class="textContainer"> -->
-      <!-- <span>{{ tripData[index].title }}</span> -->
-      <!-- <br /> -->
-      <!-- {{ tripData[index].description }} -->
-      <!-- Date of trip: -->
-      <!-- <br /> -->
-      <!-- Start: {{ tripData[index].start }} -->
+
       <br />
-      <!-- End: {{ tripData[index].end }} -->
     </div>
-    <!-- <div id="authorSection" class="is-flex"> -->
-    <!-- <img id="authorImg" src="src/assets/images/main/Driver.png" alt="" /> -->
-    <!-- <div style="height: fit-content"> -->
-    <!-- <p style="margin-top: 5px; margin-left: 10px"> -->
-    <!-- Author: {{ tripData[index].username }} -->
-    <!-- </p> -->
-    <!-- </div> -->
-    <!-- </div> -->
-    <!-- <RouterLink :to="'/post/' + trip.id"></RouterLink> -->
-    <!-- </div> -->
-    <!-- <DashboardPostSectionCardsFooter :id="index" /> -->
-    <!-- <EditModal /> -->
   </div>
 </template>
 
 <script>
-// import DashboardPostSectionCardsFooter from "./DashboardPostSectionCardsFooter.vue";
-// import EditModal from "../EditModal.vue";
-
-// import Date from "../tags/Date.vue";
-
 export default {
   methods: {
     testFunction() {
       console.log("update received through destinationCard");
     },
   },
-  // components: {
-  //   DestinationCardFooter,
-  //   EditModal,
-  //   // Date,
-  // },
+
   props: ["tripData"],
-  //   watch: {
-  //     tripData() {},
-  //   },
 };
 </script>
 
@@ -127,26 +80,15 @@ export default {
   justify-content: space-between;
   min-width: 40%;
   flex: 1 1 250px;
-  /* min-height: fit-content !important; */
-  /* text-align: center; */
+
   border-radius: 20px;
   border: 1px solid #dee2e6 !important;
   margin: 6px 8px;
-  /* font-size: 1.3rem;
-  line-height: 1.5rem; color: white; */
 }
-/* #authorImg { */
-/* width: 35px;
-  border-radius: 50%;
-  border: 1px solid #dee2e6;
-  margin-left: 35px; */
-/* background-color: grey; */
-/* } */
 
 #tripImg {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  /* width: 200px !important; */
   min-height: 192.656px !important;
   width: auto !important;
   margin-bottom: 12px;
@@ -189,14 +131,4 @@ export default {
   padding: 3%;
   font-weight: bolder;
 }
-
-/* a {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  text-indent: -9999px;
-  overflow: hidden;
-} */
 </style>

@@ -53,58 +53,22 @@
         </GMapInfoWindow>
       </GMapMarker>
     </GMapMap>
-    <!-- <button @click="showData">Show this.trip data</button> -->
   </div>
-
-  <!-- :key="index"
-          v-for="(m, index) in markers"
-          :position="m.position"
-          :clickable="true"
-          :draggable="true"
-          @click="center = m.position" -->
 </template>
 
 <script>
-// import SERVER from "../../services/Server";
-// import WEATHER_API from "../../services/OpenWeatherAPI";
 export default {
   props: ["tripData"],
   name: "App",
   methods: {
-    // showData() {
-    //   console.log(this.tripData);
-    // },
     openMarker(id) {
       this.openedMarkerID = id;
       this.tripPosition = id + 1;
     },
   },
 
-  // async beforeCreate() {
-  // await WEATHER_API.loadDataFromWeatherAPI();
-  // },
-  // mounted: async function () {
-  //   console.log(this.tripData);
-  //   console.log("Maps mounted");
-  // await WEATHER_API.loadDataFromWeatherAPI();
-
-  // const result = await SERVER.getAllTrips();
-  // console.log("This was created");
-  // console.log(result);
-  // for (let i = 0; i < this.tripData.length; i++) {
-  //   this.markers.push({
-  //     id: i,
-  //     position: {
-  //       lat: this.tripData[i].lat,
-  //       lng: this.tripData[i].lon,
-  //     },
-  //   });
-  // }
-  // console.log(this.markers);
-  // },
   watch: {
     tripData() {
-      // console.log("updateMarkers function was called");
       for (let i = 0; i < this.tripData.length; i++) {
         this.markers.push({
           id: i,
@@ -124,7 +88,6 @@ export default {
       markers: [],
       openedMarkerID: null,
       tripPosition: null,
-      // tripData: this.tripData,
     };
   },
 };
@@ -132,7 +95,6 @@ export default {
 <style scoped>
 #mapsWrapper {
   min-height: 80vh;
-  /* border-left: #0e2a48 2px solid; */
   width: 50%;
   box-sizing: border-box;
   flex: 1 1 450px;

@@ -11,19 +11,11 @@ import HomeHeader from "./HomeHeader.vue";
 import HomeMain from "./HomeMain.vue";
 import Dashboard from "./Dashboard/Dashboard.vue";
 
-// import Main from "@/components/main/Main.vue";
-// import Header from "@/components/main/Header.vue";
-// import Dashboard from "@/components/main/Dashboard.vue";
-
 export default {
   components: {
     HomeMain,
     HomeHeader,
     Dashboard,
   },
-
-  // mounted: function () {
-  //   console.log(window.pageXOffset);
-  // },
 };
 </script>

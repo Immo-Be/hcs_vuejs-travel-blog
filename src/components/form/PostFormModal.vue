@@ -1,5 +1,4 @@
 <template>
-  <!-- <transition name="pop" appear> -->
   <div style="z-index: 1" class="modal is-active">
     <div class="modal-background"></div>
     <div class="modal-card">
@@ -7,7 +6,7 @@
         <p class="modal-card-title">
           Edit Info for trip to {{ cityValue.city }}
         </p>
-        <!-- <p class="modal-card-title">Edit Info for trip to {{ details.city }}</p> -->
+
         <button
           @click="toggleModalOff"
           class="delete"
@@ -64,36 +63,19 @@
       <button class="modal-close is-large" aria-label="close"></button>
     </div>
   </div>
-  <!-- </transition> -->
-
-  <!-- :class="{ 'is-active': showModal } -->
 </template>
 
 <script>
 import HEROKU_SERVER from "../../services/herokuServer";
-// import WEATHER_API from "../services/OpenWeatherAPI";
 
 import PostForm from "./PostForm.vue";
 
 export default {
-  //   props: {
-  //     details: {
-  //       type: Object,
-
-  //       default(rawProps) {
-  //         return { city: "CityEditModalProp" };
-  //       },
-  //     },
-  //   },
   props: ["details", "showModal"],
   components: {
     PostForm,
   },
-  //   data: function () {
-  //     return {
-  //       showModal: true,
-  //     };
-  //   },
+
   emits: ["turnModalOff"],
   data: function () {
     return {
@@ -134,19 +116,9 @@ export default {
 
     async updateTripToServer() {
       this.isLoading = true;
-      // console.log(e);
-      //   console.log("1. function called");
       await HEROKU_SERVER.updateTrip(this.newTripInfo);
-      //   console.log("2. Trip update");
-      // WEATHER_API.loadDataFromWeatherAPI();
-      // this.result = await SERVER.getAllTrips();
-      //   console.log("4. All trips get");
-      //   console.log(this.result);
-      // router.push({ path: "/post/" + 1 });
-      // this.$forceUpdate();
       await this.emitter.emit("emitnewTripInfo");
       this.toggleModalOff();
-      //   await WEATHER_API.loadDataFromWeatherAPI();
     },
   },
 };
@@ -158,24 +130,4 @@ export default {
     margin-top: 50px;
   }
 }
-/* .fade-enter-active,
-.fade-leave-active {
-  transition: opacity 0.4s linear;
-}
-
-.fade-enter,
-.fade-leave-to {
-  opacity: 0;
-}
-
-.pop-enter-active,
-.pop-leave-active {
-  transition: transform 0.4s cubic-bezier(0.5, 0, 0.5, 1), opacity 0.4s linear;
-}
-
-.pop-enter,
-.pop-leave-to {
-  opacity: 0;
-  transform: scale(0.3) translateY(-50%);
-} */
 </style>
