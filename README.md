@@ -1,3 +1,6 @@
+#Check out my final project from Hamburg Coding School on https://travelblogstories.netlify.app/ :-)
+
+
 # vue-clientApp
 
 This template should help get you started developing with Vue 3 in Vite.
