@@ -6,11 +6,10 @@
 </template>
 
 <script>
-import DashboardPostSection from "./DashboardPostSection.vue";
 import DashboardMapSection from "./DashboardMapSection.vue";
+import DashboardPostSection from "./DashboardPostSection.vue";
 
 import HEROKU_SERVER from "../../../services/herokuServer";
-// import WEATHER_API from "../../services/OpenWeatherAPI";
 
 export default {
   data: function () {
@@ -22,13 +21,20 @@ export default {
     result() {},
   },
 
+  methods: {
+    testFunction() {
+      console.log("update received through destinationCard");
+    },
+  },
+
   components: {
     DashboardPostSection,
     DashboardMapSection,
   },
-  created: async function () {
-    console.log("Dashboard created");
+  async created() {
     this.result = await HEROKU_SERVER.getAllTrips();
+    console.log(this.result);
+    console.log("Dashboard created");
   },
   updated() {
     console.log("Dashboard updated");

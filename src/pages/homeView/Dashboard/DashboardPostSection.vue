@@ -16,12 +16,11 @@ export default {
     return {
       trips: [],
       city: {
-        city: "Kiel",
-        start: "2015-06-30",
-        end: "2015-07-29",
-        description:
-          "Hongkong lorem ipsum dolor sit amet consectetur adipisicing elit. Sit neque aliquid magnam sed in inventore cupiditate assuma, delectus consectetur recusandae, tempore, aspernatur quia. Praesentium dolorum harum, enim incidunt non fuga.",
-        username: "Immo",
+        city: "",
+        start: "",
+        end: "",
+        description: "",
+        username: "",
         mood: null,
       },
     };

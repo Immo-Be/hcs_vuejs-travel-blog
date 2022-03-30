@@ -13,7 +13,6 @@ import PostDescription from "./PostDescription.vue";
 import PostMap from "./PostMap.vue";
 
 import HEROKU_SERVER from "../../services/herokuServer";
-// import WEATHER_API from "../services/OpenWeatherAPI";
 
 export default {
   components: {
@@ -22,44 +21,22 @@ export default {
   },
   data: function () {
     return {
-      tripDetailPostion: this.$route.params.id - 1,
+      tripDetailPostion: this.$route.params.id,
       tripData: [],
       city: "",
       newData: [],
     };
   },
 
-  // watch: {
-  //   tripData() {
-  //     this.tripData;
-  //   },
-  // },
   updated() {
-    // console.log("BlogPostDetail Updated");
     this.emitter.on("emitnewTripInfo", async () => {
-      // console.log(result[1]);
-      // this.tripData = result[1];
-      // console.log(this.result);
-      // await WEATHER_API.loadDataFromWeatherAPI();
       this.tripData = await HEROKU_SERVER.getAllTrips();
-      // console.log(this.tripData[this.tripDetailPostion].city);
       this.city = this.tripData[this.tripDetailPostion].city;
-
-      // console.log("testEmit works");
     });
-    // this.tripData[this.tripDetailPostion];
   },
-  // methods: {
-  //   async initData() {
-  //     this.tripData = await HEROKU_SERVER.getAllTrips();
-  //     console.log(this.tripData);
-  //     // console.log(this.tripData[this.tripDetailPostion].city);
-  //     this.city = this.tripData[this.tripDetailPostion].city;
-  //   },
-  // },
+
   created: async function () {
     this.tripData = await HEROKU_SERVER.getAllTrips();
-    // console.log(this.tripData[this.tripDetailPostion].city);
     this.city = this.tripData[this.tripDetailPostion].city;
   },
   mounted() {

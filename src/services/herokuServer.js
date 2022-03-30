@@ -1,6 +1,6 @@
 
+const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
 
-const HEROKU_SERVER_URL = 'https://hcs-finalproject.herokuapp.com';
 
 
 async function getAllTrips() {
@@ -8,13 +8,12 @@ async function getAllTrips() {
     const url = HEROKU_SERVER_URL;
     const response = await fetch(url);
     const result = await response.json();
-
-    return result;
+    console.log(result)
+    return result.result;
 }
 
 
 async function addTrip(newTrip) {
-    // console.log(newTrip)
     
     const url = HEROKU_SERVER_URL + "/id";
     const response = await fetch(url, {
@@ -31,7 +30,6 @@ async function addTrip(newTrip) {
 };
 
 async function updateTrip(trip) {
-    // console.log(trip)
     
     const url = HEROKU_SERVER_URL + "/update";
     const response = await fetch(url, {
@@ -41,10 +39,8 @@ async function updateTrip(trip) {
         },
         body: JSON.stringify(trip)
     });
-    // alert("helloo")
 
     const result = await response.json();
-    // console.log(result)
 
     return result;
 };
@@ -71,7 +67,6 @@ async function deleteTrip(trip) {
 
 export default {
     getAllTrips,
-    // updateTripsWithWeatherInfo,
     addTrip,
     updateTrip,
     deleteTrip

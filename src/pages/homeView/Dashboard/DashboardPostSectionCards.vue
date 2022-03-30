@@ -2,7 +2,7 @@
   <div class="card" v-for="(trip, index) in tripData" :key="index">
     <div
       class="imageContainer"
-      @click="$router.push({ path: '/post/' + trip.id })"
+      @click="$router.push({ path: '/post/' + index })"
     >
       <img id="tripImg" :src="tripData[index].img" />
 

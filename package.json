@@ -10,6 +10,7 @@
     "@emailjs/browser": "^3.4.0",
     "@fawmi/vue-google-maps": "^0.9.4",
     "mitt": "^3.0.0",
+    "mysql": "^2.18.1",
     "path": "^0.12.7",
     "vue": "^3.2.31",
     "vue-router": "^4.0.12"
