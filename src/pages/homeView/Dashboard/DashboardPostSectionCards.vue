@@ -89,8 +89,8 @@ export default {
 #tripImg {
   border-top-right-radius: 20px;
   border-top-left-radius: 20px;
-  min-height: 192.656px !important;
-  width: auto !important;
+  height: 15rem !important;
+  width: 100% !important;
   margin-bottom: 12px;
 }
 
