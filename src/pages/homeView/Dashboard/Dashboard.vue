@@ -10,6 +10,7 @@ import DashboardMapSection from "./DashboardMapSection.vue";
 import DashboardPostSection from "./DashboardPostSection.vue";
 
 import HEROKU_SERVER from "../../../services/herokuServer";
+// import WEATHER_API from "../../services/OpenWeatherAPI";
 
 export default {
   data: function () {
@@ -35,6 +36,9 @@ export default {
     this.result = await HEROKU_SERVER.getAllTrips();
     console.log(this.result);
     console.log("Dashboard created");
+  },
+  mounted() {
+    console.log("Dashboard mounted");
   },
   updated() {
     console.log("Dashboard updated");

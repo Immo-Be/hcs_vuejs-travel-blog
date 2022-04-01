@@ -157,6 +157,7 @@ export default {
     sendUserInputToServer() {
       HEROKU_SERVER.addTrip(this.city);
       this.clearForm();
+      alert("User data successfully added!");
       this.$router.push({ path: "/" });
     },
     clearForm() {

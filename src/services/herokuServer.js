@@ -24,10 +24,12 @@ async function addTrip(newTrip) {
         },
         body: JSON.stringify(newTrip)
     });
-    const result = await response.json();
-    alert(result)
+    // const result = await response.json();
+    // alert(result)
 
-    return result;
+    this.$router.push({ path: "/" });
+    // return result;
+
 };
 
 async function updateTrip(trip) {
