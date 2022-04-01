@@ -1,6 +1,6 @@
 
-// const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
-const HEROKU_SERVER_URL = 'http://localhost:3002';
+const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
+// const HEROKU_SERVER_URL = 'http://localhost:3002';
 
 
 
