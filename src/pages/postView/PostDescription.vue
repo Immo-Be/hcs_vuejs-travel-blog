@@ -20,7 +20,6 @@
             {{ city }}, {{ country }}
           </p>
         </div>
-        <!-- <p>About the trip to {{ city }}</p> -->
         <img :src="img" alt="" />
         <div id="tagSection">
           <Username :user="username" />
@@ -29,17 +28,12 @@
 
         <h2>{{ title }}</h2>
         <br />
-        <!-- <p class="author">
-          Author: {{ username }} <br />
-          Date of Visit: {{ start }} until {{ end }}
-        </p> -->
+
         <br />
         <p class="description">{{ description }}</p>
       </div>
       <PostDescriptionFooter :details="details" />
     </div>
-    <!-- <button @click="initData">Force update</button>
-    {{ details }} -->
   </div>
 </template>
 
@@ -73,40 +67,8 @@ export default {
       tripData: [],
     };
   },
-  updated() {
-    // console.log("THIS IS UPDATED TO0");
-  },
-  // async updated() {
-  //   console.log("COMPONTEN UPDATED  !!");
-  //   this.tripData = [];
 
-  // this.city = this.tripData[1].city;
-  // this.title = this.details[1].title;
-  // this.title = "thisworks";
-
-  // console.log("compontend updated");
-  // this.city = "my City blalbla";
-  // },
-  methods: {
-    // async initData() {
-    //   alert("works");
-    // this.tripData = await SERVER.getAllTrips();
-    // console.log(this.tripData);
-    // alert("this works");
-    // this.city = this.tripData[this.position].city;
-    // this.title = this.tripData[this.position].title;
-    // this.start = this.tripData[this.position].start;
-    // this.end = this.tripData[this.position].end;
-    // // this.tripData = ["bla", "bla"];
-    // forceUpdate();
-    // },
-  },
   watch: {
-    // initData() {
-    //   // alert("this works");
-    //   this.city = "my City blalbla";
-    //   console.log(this.city);
-    // },
     details() {
       this.city = this.details.city;
       this.title = this.details.title;
@@ -123,10 +85,6 @@ export default {
 </script>
 
 <style scoped>
-/* #contentInfoWrapper { */
-/* padding-bottom: 24px; */
-/* border-bottom: 1px solid rgb(237, 237, 237); */
-/* } */
 h2 {
   font-size: 2rem;
   font-weight: bolder;
@@ -142,7 +100,6 @@ h2 {
 }
 
 #BlogPostWrapper {
-  /* border-left: #0e2a48 2px solid; */
   width: 50%;
   box-sizing: border-box;
   flex: 1 1 450px;
@@ -169,12 +126,10 @@ h2 {
 
 .author {
   font-size: 1.5rem;
-  /* line-height: 2rem; */
 }
 
 .description {
   font-size: 1.2rem;
-  /* line-height: 2rem; */
 }
 
 @media (max-width: 499px) {

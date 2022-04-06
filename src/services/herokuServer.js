@@ -11,7 +11,7 @@ async function getAllTrips() {
     const result = await response.json();
     console.log(result)
     return result.result;
-}
+};
 
 
 async function addTrip(newTrip) {
@@ -68,5 +68,4 @@ export default {
     addTrip,
     updateTrip,
     deleteTrip
-
-}
+};

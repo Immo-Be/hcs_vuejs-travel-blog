@@ -35,7 +35,6 @@ export default {
 
 <style scoped>
 #mapsDetailWrapper {
-  /* border-left: #0e2a48 2px solid; */
   width: 50%;
   box-sizing: border-box;
   flex: 1 1 450px;

@@ -94,7 +94,7 @@
     If you want, you can provide a URL for an image of your trip. You can find
     stock images <a href="https://pixabay.com/de/" target="_blank">here</a> 🙂
   </p>
-  <!-- <p>{{ city.isShown }}</p> -->
+
   <div v-show="city.isShown === undefined" class="field is-grouped">
     <div class="control">
       <button @click="sendUserInputToServer" class="button is-link">
@@ -119,11 +119,7 @@ export default {
         return {};
       },
     },
-    // showButtons: {
-    //   type: Boolean,
-    // },
   },
-  // props: ["details"],
   data: function () {
     return {
       trips: [],

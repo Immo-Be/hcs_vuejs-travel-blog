@@ -108,7 +108,6 @@ export default {
     },
 
     async deleteTripFromServer() {
-      // console.log(this.cityValue.id);
       alert("Deleted card succesfully");
       this.$router.push({ path: "/" });
       HEROKU_SERVER.deleteTrip(this.cityValue);

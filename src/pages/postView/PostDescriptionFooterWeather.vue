@@ -77,7 +77,6 @@ export default {
   background-color: #0e2a48;
   box-sizing: border-box;
   color: white;
-  /* min-height: 200px; */
   padding: 16px;
 }
 
@@ -93,7 +92,6 @@ span:nth-child(1) {
 }
 
 #desriptionWrapper p {
-  /* margin-top: 16px; */
   font-size: 1.2rem;
 }
 
