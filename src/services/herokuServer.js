@@ -24,11 +24,6 @@ async function addTrip(newTrip) {
         },
         body: JSON.stringify(newTrip)
     });
-    // const result = await response.json();
-    // alert(result)
-
-    this.$router.push({ path: "/" });
-    // return result;
 
 };
 
