@@ -1,5 +1,5 @@
-
-const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
+// const HEROKU_SERVER_URL = 'https://hcs-expressjs-sql.herokuapp.com';
+const HEROKU_SERVER_URL = 'https://hcs-finalproject.herokuapp.com';
 // const HEROKU_SERVER_URL = 'http://localhost:3002';
 
 
@@ -10,7 +10,8 @@ async function getAllTrips() {
     const response = await fetch(url);
     const result = await response.json();
     console.log(result)
-    return result.result;
+    // return result.result; -> For SQL only
+    return result
 };
 
 
