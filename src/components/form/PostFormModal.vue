@@ -22,7 +22,7 @@
           class="button is-success"
           :class="{ 'is-loading': isLoading }"
         >
-          Save changes
+          Save
         </button>
         <button @click="toggleModalOff" class="button">Cancel</button>
         <button @click="toggleWarning" class="button is-danger">Delete</button>
@@ -128,5 +128,17 @@ export default {
   .is-active {
     margin-top: 50px;
   }
+}
+.modal-card {
+  max-height: 85%;
+}
+
+button {
+  max-width: 35%;
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
 }
 </style>
